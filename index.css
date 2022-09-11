@@ -1,0 +1,410 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+ font-family: 'Lora', serif;
+ box-sizing: border-box;
+ padding: 0;
+ margin: 0;
+}
+body{
+ background: linear-gradient(145deg, #aff 40%, #0ff 80%, #ff0 100%);
+ background-position: center;
+ background-attachment: fixed;
+ background-size: cover;
+ display: block;
+ margin: auto;
+ height: 200vh;
+}
+nav.navbar{
+ background: linear-gradient(145deg, #0af 40%, #0ff 80%, #ff0 100%);
+ background-repeat: no-repeat;
+}
+a.navbar-brand{
+ display: block;
+ margin: 0;
+ padding: 0;
+}
+a.navbar-brand img.imgbrand{
+ display: block;
+ width: 55px;
+ height: 55px;
+ border-radius: 50%;
+}
+ul.navbar-nav li.nav-item{
+ text-align: center;
+ display: block;
+ margin: auto;
+}
+ul.navbar-nav li.nav-item{
+ text-align: center;
+ display: block;
+ margin: auto;
+ /*width: 100%;*/
+}
+ul.navbar-nav li.nav-item a.nav-link{
+ display: block;
+ width: 100%;
+ text-transform: capitalize;
+ font-weight: 600;
+ color: #002;
+}
+
+li.nav-item ul.dropdown-menu li:hover a.dropdown-item{
+ background: linear-gradient(145deg, #0af 40%, #0ff 80%, #ff0 100%);
+ background-repeat: no-repeat;
+ color: #fff;
+ font-weight: bold;
+}
+
+@media (max-width: 767.98px) {
+ nav.navbar img.imgbrand{
+  margin-bottom: 5px;
+ }
+ nav.navbar h3.brand-nama{
+  display: none;
+ }
+ nav.navbar button.navbar-toggler + *{
+  border-top: 1px solid #acf;
+  padding-bottom: 10px;
+ }
+ nav.navbar ul.navbar-nav{
+  margin-top: 5px;
+ }
+ ul.navbar-nav li.nav-item{
+ text-align: center;
+ display: block;
+ margin: auto;
+ width: 100%;
+}
+ul.navbar-nav li.nav-item a.nav-link{
+ display: block;
+ border-radius: 10px;
+ width: 100%;
+}
+ul.navbar-nav li.nav-item:hover a.nav-link, ul.navbar-nav li.nav-item:active a.nav-link{
+ width: 100%;
+  color: #ff8;
+  text-shadow: .5px 1px 0 #fe9;
+  font-weight: bold;
+  background: linear-gradient(-345deg, #0af 40%, #0ff 80%, #ff0 100%);
+  box-shadow: inset 0 0 4px #ff000050;
+}
+/*section jumbotron*/
+#jumbot .jumbotron{
+ background-image: url('/img/jumbg.jpg');
+ background-position: center center;
+ background-size: 100% 100%;
+ background-repeat: no-repeat;
+ height: 450px;
+ padding: 1rem;
+ z-index: 0;
+}
+#jumbot .jumbotron:before{
+ content: "";
+ position: absolute;
+ background: radial-gradient(#06009d50 60%, #00000098 100%);
+ width: 100%;
+ height: 450px;
+ left: 0;
+ padding: 0;
+ margin: 0;
+ margin-top: -1rem;
+ z-index: 1;
+}
+#jumbot .display-4 {
+ position: relative;
+ text-transform: capitalize;
+ margin-top: 3rem;
+ text-align: center;
+ color: #fff;
+ text-shadow: 3px 0 0 #ff1;
+ -webkit-text-stroke: 1px #0af;
+ font-weight: 900;
+ font-size: 32pt;
+ z-index: 5;
+}
+#jumbot .lead, .my-4, .p-jumb, .btnjumb {
+ position: relative;
+ color: #fff;
+ z-index: 5;
+}
+#jumbot .btnjumb{
+ position: relative;
+ display: block;
+ margin: auto;
+ width: 150px;
+ bottom: 0;
+ text-align: center;
+}
+
+/*my konten*/
+#konten{
+ margin: 1rem;
+ margin-top: 2rem;
+}
+#konten .container-lg{
+ background-color: #ffa;
+ padding: 1rem;
+ border-radius: 10px;
+}
+#konten .imgkonten{
+ width: 100px;
+ height: 100px;
+ margin: auto;
+}
+#konten .row-konten{
+ margin: auto;
+}
+}
+
+/*version desktop*/
+@media (min-width: 768px) {
+ @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+ nav.navbar{
+  padding-left: 1rem;
+  padding-right: 1rem;
+ }
+ nav.navbar h3.brand-nama{
+  position: relative;
+  width: 100%;
+  color: #0ff;
+  margin-top: 10px;
+  margin-left: 10px;
+  font-weight: bold;
+  padding: 5px;
+  background: #ff0;
+  border-top: 2px solid #0ff;
+  border-left: 2px solid #0ff;
+  border-right: 0 solid transparent;
+  border-bottom: 2px solid #0ff;
+  border-radius: 10px;
+  text-shadow: 0 2px 0 #00cfff;
+ }
+ nav.navbar h3.brand-nama:after{
+  content: "Ruzaini";
+  position: relative;
+  color: #ff0;
+  border-radius: 10px;
+  padding: 2px;
+  background: #0ff;
+  text-shadow: 0 2px 0 #ffc000;
+  font-weight: bold;
+  border-top: 2px solid #ff0;
+  border-left: 0 solid transparent;
+  border-right: 2px solid #ff0;
+  border-bottom: 2px solid #ff0;
+ }
+ul.navbar-nav li.nav-item:hover a.nav-link{
+ content: ;
+ display: block;
+  color: #ff0;
+  text-shadow: 0 1.5px 0 #ffc000, 0 2px 0 #0af;
+  -webkit-text-stroke: .5px #0af;
+  background: transparent;
+  font-weight: bold;
+}
+li.nav-item:hover a.nav-link::after{
+  content: '';
+  position: relative;
+  display: flex;
+  margin: auto;
+  margin-bottom: -8px;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #06f;
+  width: 50%;
+}
+i.af-caret-down-fill{
+ color: #002;
+ font-size: 10pt;
+}
+li.nav-item:hover i.fa-caret-down{
+ color: #ff0;
+ transform: rotate(180deg) translateY(-4px);
+ -webkit-text-stroke: .5px #0af;
+}
+
+ #jumbot .jumbotron{
+ background-image: url('/img/jumbg.jpg');
+ background-position: center center;
+ background-size: 100% 100%;
+ background-repeat: no-repeat;
+ height: 450px;
+ padding: 1rem;
+ z-index: 0;
+}
+#jumbot .jumbotron:before{
+ content: "";
+ position: absolute;
+ background: radial-gradient(#06009d50 60%, #00000098 100%);
+ width: 100%;
+ height: 450px;
+ left: 0;
+ padding: 0;
+ margin: 0;
+ margin-top: -1rem;
+ z-index: 1;
+}
+#jumbot .display-4 {
+ position: relative;
+ text-transform: capitalize;
+ margin-top: 3rem;
+ text-align: center;
+ color: #fff;
+ text-shadow: 3px 0 0 #ff1;
+ -webkit-text-stroke: 1px #0af;
+ font-weight: 900;
+ font-size: 32pt;
+ z-index: 5;
+}
+#jumbot .lead, .my-4, .p-jumb, .btnjumb {
+ position: relative;
+ color: #fff;
+ z-index: 5;
+}
+#jumbot .btnjumb{
+ position: relative;
+ display: block;
+ margin: auto;
+ width: 150px;
+ bottom: 0;
+ text-align: center;
+}
+
+#konten .container-fluid{
+ position: relative;
+ display: flex;
+ align-items: start;
+ margin-top: 4rem;
+ width: 100%;
+}
+#konten .imgkonten{
+ display: flex;
+ align-items: center;
+ width: 100px;
+ height: 100px;
+ margin: auto;
+}
+#konten .row-artikel{
+ position: relative;
+ display: flex;
+ align-items: start;
+ justify-content: space-evenly;
+}
+#konten h5.lebel-konten{
+ padding: 10px;
+ padding-top: 15px;
+ margin: 0;
+ text-transform: capitalize;
+}
+#konten .my-2 {
+ margin: 0;
+ margin-left: 1rem;
+ margin-right: 1rem;
+ padding: 0;
+ color: #0af;
+ opacity: 1;
+}
+#konten .col-md-3 .my-2{
+ margin: auto;
+ width: 80%;
+ padding: 5px;
+ color: #aff;
+ opacity: 1;
+}
+#konten .col-md-8{
+ background: #aff;
+ padding: 0;
+ border: 1px solid #00e;
+ border-radius: 10px;
+ -webkit-box-shadow: 0 5px 10px #00000050;
+}
+#konten .item-artikel{
+ margin-bottom: 5px;
+ border-radius: 10px;
+}
+#konten .col-md-3{
+ position: relative;
+ height: 200vh;
+}
+#konten .myartikel{
+ position: sticky;
+ top: 10px;
+ background: linear-gradient(240deg, #0af 0%, #a0f 70%);
+ border-bottom: 1px solid #ff0;
+ border-radius: 10px;
+ width: 100%;
+ color: #fff;
+ margin-top: 0px;
+ margin-bottom: 25px;
+ box-shadow: 5px 10px 10px #00000050;
+ animation: fade-in ease;
+ animation-duration: 2s;
+}
+#konten .myartikel:nth-child(2){
+ position: sticky;
+ top: 30%;
+ background: linear-gradient(240deg, #0af 0%, #a0f 70%);
+ border-radius: 10px;
+ margin-top: 25px;
+ margin-bottom: 25px;
+ color: #fff;
+ box-shadow: 5px 10px 10px #00000050;
+ animation: fade-in ease;
+ animation-duration: 3s;
+ /*animation-delay: 2s;*/
+}
+@keyframes fade-in{
+ 0%{
+  transform: translate(0,150px);
+  opacity: 0;
+ }
+ 50%{
+  transform: translate(0,100px);
+  opacity: 0;
+ }
+ 100%{
+  transform: translate(0,0);
+  opacity: 1;
+ }
+}
+#konten .col-md-3 .stretched-link{
+ position: relative;
+ bottom: 5px;
+ color: #aff;
+ padding: 0;
+ margin: 0;
+ 
+}
+#konten .col-md-3 .link-selengkapnya{
+ position: relative;
+ display: block;
+ bottom: 5px;
+ color: #aff;
+ padding: 5px;
+ margin: auto;
+ width: 100%;
+ text-align: center;
+ text-transform: capitalize;
+ font-size: 11pt;
+}
+#konten .col-md-3 .link-selengkapnya:after{
+ content: "...";
+}
+#konten .col-md-8 .judul-artikel{
+ font-size: 16pt;
+}
+#konten .col-md-8 .desc-artikel{
+ font-size: 11pt;
+}
+#konten .col-md-3 .myartikel div h5.judul-artikel{
+ font-size: 12pt;
+}
+#konten .col-md-3 .col-md{
+ margin: 5px;
+}
+#konten .col-md-3 .myartikel .artikel-link{
+ border-bottom: 1px solid #0ff;
+ padding: 5px;
+}
+}
