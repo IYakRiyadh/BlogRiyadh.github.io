@@ -92,7 +92,7 @@ ul.navbar-nav li.nav-item:hover a.nav-link, ul.navbar-nav li.nav-item:active a.n
 }
 /*section jumbotron*/
 #jumbot .jumbotron{
- background-image: url('/img/jumbg.jpg');
+ background-image: url('img/jumbg.jpg');
  background-position: center center;
  background-size: 100% 100%;
  background-repeat: no-repeat;
@@ -225,7 +225,7 @@ li.nav-item:hover i.fa-caret-down{
 }
 
  #jumbot .jumbotron{
- background-image: url('/img/jumbg.jpg');
+ background-image: url('img/jumbg.jpg');
  background-position: center center;
  background-size: 100% 100%;
  background-repeat: no-repeat;
